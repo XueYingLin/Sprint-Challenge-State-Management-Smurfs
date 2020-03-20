@@ -16,10 +16,15 @@ const AddSmurf = () => {
 
     return (
         <form onSubmit={submitChange}>
-            <input type="text" name="name" value={name} placeholder="name" onChange={ e => {setName(e.target.value)}} />
-            <input type="text" name="age" value={age} placeholder="age" onChange={ e => {setAge(e.target.value)}} />
-            <input type="text" name="height" value={height} placeholder="height" onChange={ e => {setHeight(e.target.value)}} />
-            <input type="submit" />
+            <div className="input">
+                <input type="text" name="name" value={name} placeholder="name" onChange={ e => {setName(e.target.value)}} />
+                <input type="text" name="age" value={age} placeholder="age" onChange={ e => {setAge(e.target.value)}} />
+                <input type="text" name="height" value={height} placeholder="height" onChange={ e => {setHeight(e.target.value)}} />
+            </div>
+            <br />
+            <div className="submit-btn">
+            <   input type="submit" />
+            </div>
         </form>
     )
 }
