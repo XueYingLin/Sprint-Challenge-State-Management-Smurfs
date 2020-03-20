@@ -1,7 +1,9 @@
 import React, { useState, useContext } from "react";
+import Smurf from './Smurf';
+import { SmurfContext } from '../contexts/SmurfContext'; //consume that we have access to the value
 
-const smurfs = () => {
-    const [smurfs, addSmurf] = useContext();
+const Smurfs = () => {
+    const [smurfs, addSmurf] = useContext( SmurfContext );
 
     return (
         <div>
